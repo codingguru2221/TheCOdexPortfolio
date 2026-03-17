@@ -1,0 +1,19 @@
+packages:
+  "three": "Required for 3D background rendering"
+  "@types/three": "TypeScript definitions for Three.js"
+  "@react-three/fiber": "React wrapper for Three.js for declarative 3D scenes"
+  "@react-three/drei": "Useful helpers and abstractions for React Three Fiber"
+  "framer-motion": "For fluid scroll animations, spring physics, and page transitions"
+  "react-type-animation": "For the typing effect in the hero section"
+  "react-icons": "For brand icons (GitHub, LinkedIn, YouTube, Instagram)"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility to merge Tailwind classes without style conflicts"
+
+images:
+  - path: "artifacts/portfolio/public/images/avatar.png"
+    description: "A mysterious cyberpunk hacker avatar silhouette with glowing cyan and purple neon accents, dark background, highly detailed, 8k"
+    aspect_ratio: "1:1"
+
+notes:
+  - "The app is a single-page portfolio with smooth scrolling sections."
+  - "Contact form uses a simulated TanStack Query mutation to show UI completeness without a real backend."

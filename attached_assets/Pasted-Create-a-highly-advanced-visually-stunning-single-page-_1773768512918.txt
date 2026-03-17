@@ -1,0 +1,155 @@
+Create a highly advanced, visually stunning **single-page 3D portfolio website** for a software engineer named **Veerendra Vishwakarma (The Codex)**.
+
+### 🎯 Goal:
+
+The portfolio should feel like a **futuristic, premium, interactive experience** — not a basic website. It should include **3D elements, smooth animations, and dynamic transitions**.
+
+---
+
+## 🧠 Tech Stack Requirements:
+
+* React (with Vite)
+* Tailwind CSS
+* Framer Motion (for animations)
+* Three.js / React Three Fiber (for 3D elements)
+* GSAP (optional for advanced animations)
+* EmailJS or backend form (for contact)
+
+---
+
+## 🎨 Design Style:
+
+* Dark theme (Cyberpunk / futuristic)
+* Neon glow accents (blue, purple, cyan)
+* Glassmorphism + soft shadows
+* Smooth scrolling
+* Fully responsive (mobile + desktop)
+
+---
+
+## 🧩 Sections (Single Page Layout):
+
+### 1. 🔥 Hero Section (Full Screen)
+
+* 3D animated background (floating particles / rotating objects)
+* Name: "Veerendra Vishwakarma (The Codex)"
+* Tagline:
+  "Engineering Enthusiast | Innovator in the Making | Future Tech Trailblazer"
+* Typing animation for roles:
+
+  * AI Developer
+  * Cybersecurity Enthusiast
+  * Full Stack Developer
+* CTA Buttons:
+
+  * View Projects
+  * Contact Me
+
+---
+
+### 2. 👨‍💻 About Me (Interactive)
+
+* Card with flip animation
+* Show:
+
+  * 3rd Year B.Tech Student
+  * AI + Cybersecurity Passion
+  * Currently learning Spring Boot
+* Include animated icons
+
+---
+
+### 3. 🛠️ Skills Section
+
+* Animated skill bars or circular progress
+* Categories:
+
+  * Languages (Java, Python, C, C++)
+  * Frameworks (React, Spring Boot)
+  * Tools (Linux, Git)
+* Add hover animations
+
+---
+
+### 4. 🚀 Projects Section (MOST IMPORTANT)
+
+* 3D card layout with hover tilt effect
+* Each project card should include:
+
+  * Title
+  * Description
+  * Tech Stack
+  * GitHub link button
+
+Projects:
+
+1. CryptoShield (Pendrive Password Manager)
+2. AI Study Platform
+3. College Event Hub
+
+---
+
+### 5. 🏆 Hackathon Section
+
+* Timeline or animated cards
+* Show achievements:
+
+  * Navonmesh Hackathon
+  * HackPrix
+  * RNTU Tech Fest (2nd Place)
+  * EcoCode Hackathon
+
+---
+
+### 6. 📞 Contact Section
+
+* Contact form (Name, Email, Message)
+* Working email integration (EmailJS)
+* Show:
+
+  * Email: [codexveer@gmail.com](mailto:codexveer@gmail.com)
+* Add glowing input fields
+
+---
+
+### 7. 🌐 Social Links
+
+* Animated icons:
+
+  * YouTube
+  * Instagram
+  * LinkedIn
+* Hover glow effect
+
+---
+
+## ✨ Animations & Effects:
+
+* Scroll-based animations (fade, slide, zoom)
+* Parallax scrolling
+* Mouse-follow effects
+* Hover tilt (3D cards)
+* Smooth transitions between sections
+
+---
+
+## ⚡ Extra Features:
+
+* Loading screen with animation
+* Custom cursor (glow effect)
+* Background music toggle (optional)
+* Dark futuristic UI
+
+---
+
+## 📦 Output Requirements:
+
+* Clean folder structure
+* Fully working React project
+* Reusable components
+* Responsive design
+* Comments in code for understanding
+
+---
+
+Make sure the UI feels like a **premium developer portfolio seen on Awwwards**.

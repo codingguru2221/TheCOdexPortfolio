@@ -4,8 +4,6 @@ import { Points, PointMaterial } from "@react-three/drei";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import * as THREE from "three";
-import veerAttitude from "@assets/attitude___boy___veer-20230510-0014_1773806128534.jpg";
-
 /* Detect WebGL support */
 function isWebGLAvailable(): boolean {
   try {
@@ -292,7 +290,7 @@ export default function HeroSection() {
             }}
           >
             <img
-              src={veerAttitude}
+              src="/images/ProfileIMG.jpg"
               alt="Veerendra Vishwakarma"
               className="w-full h-full object-cover object-top"
             />

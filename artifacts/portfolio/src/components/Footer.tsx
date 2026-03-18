@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { FiYoutube, FiInstagram, FiLinkedin, FiGithub } from "react-icons/fi";
 
 const socials = [
-  { icon: FiYoutube, href: "#", label: "YouTube", color: "#ff0000" },
-  { icon: FiInstagram, href: "#", label: "Instagram", color: "#e1306c" },
-  { icon: FiLinkedin, href: "#", label: "LinkedIn", color: "#0077b5" },
-  { icon: FiGithub, href: "#", label: "GitHub", color: "#a855f7" },
+  { icon: FiYoutube, href: "https://www.youtube.com/@The_COdex-Official", label: "YouTube", color: "#ff0000" },
+  { icon: FiInstagram, href: "https://www.instagram.com/the_codex_official_", label: "Instagram", color: "#e1306c" },
+  { icon: FiLinkedin, href: "https://www.linkedin.com/in/veerendra-vishwakarma-041584393/", label: "LinkedIn", color: "#0077b5" },
+  { icon: FiGithub, href: "https://github.com/codingguru2221", label: "GitHub", color: "#a855f7" },
 ];
 
 export default function Footer() {
@@ -26,8 +26,17 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center"
+          className="flex flex-col items-center text-center"
         >
+          <img
+            src="/images/codex.jpg"
+            alt="The Codex logo"
+            className="mb-4 h-20 w-20 rounded-2xl object-cover"
+            style={{
+              border: "1px solid rgba(0,245,255,0.25)",
+              boxShadow: "0 0 24px rgba(0,245,255,0.15)",
+            }}
+          />
           <h3
             className="text-2xl font-black tracking-widest"
             style={{

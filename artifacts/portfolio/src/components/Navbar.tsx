@@ -47,14 +47,18 @@ export default function Navbar() {
         {/* Logo */}
         <button
           onClick={() => scrollTo("#home")}
-          className="text-xl font-bold tracking-widest"
-          style={{
-            color: "#00f5ff",
-            textShadow: "0 0 15px rgba(0,245,255,0.6)",
-            fontFamily: "'Orbitron', sans-serif",
-          }}
+          className="flex items-center"
+          aria-label="The Codex Home"
         >
-          VV
+          <img
+            src="/images/codex.jpg"
+            alt="The Codex logo"
+            className="h-12 w-12 rounded-xl object-cover"
+            style={{
+              border: "1px solid rgba(0,245,255,0.35)",
+              boxShadow: "0 0 18px rgba(0,245,255,0.2)",
+            }}
+          />
         </button>
 
         {/* Desktop links */}

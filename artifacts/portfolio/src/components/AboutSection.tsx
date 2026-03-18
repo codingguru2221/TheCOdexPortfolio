@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import veerPassport from "@assets/IMG_20250307_200240_1773806128536.jpg";
+import veerAttitude from "@assets/attitude___boy___veer-20230510-0014_1773806128534.jpg";
 
 const interests = [
   { icon: "🤖", label: "Artificial Intelligence", color: "#00f5ff" },
@@ -47,71 +49,90 @@ export default function AboutSection() {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
-            className="flip-card h-80 cursor-pointer"
+            className="flip-card h-96 cursor-pointer"
           >
             <div className="flip-card-inner relative w-full h-full">
-              {/* Front */}
+              {/* Front — passport/formal photo */}
               <div
-                className="flip-card-front absolute inset-0 rounded-2xl flex flex-col items-center justify-center gap-4 p-6"
+                className="flip-card-front absolute inset-0 rounded-2xl overflow-hidden flex flex-col items-center justify-end"
                 style={{
-                  background: "linear-gradient(135deg, rgba(0,245,255,0.08), rgba(168,85,247,0.08))",
                   border: "1px solid rgba(0,245,255,0.3)",
-                  boxShadow: "0 0 30px rgba(0,245,255,0.1)",
+                  boxShadow: "0 0 30px rgba(0,245,255,0.15), 0 0 60px rgba(0,245,255,0.05)",
                 }}
               >
-                {/* Avatar */}
+                {/* Photo background */}
+                <img
+                  src={veerPassport}
+                  alt="Veerendra Vishwakarma"
+                  className="absolute inset-0 w-full h-full object-cover object-top"
+                />
+                {/* Gradient overlay */}
                 <div
-                  className="w-24 h-24 rounded-full flex items-center justify-center text-4xl font-black"
+                  className="absolute inset-0"
                   style={{
-                    background: "linear-gradient(135deg, rgba(0,245,255,0.2), rgba(168,85,247,0.2))",
-                    border: "2px solid rgba(0,245,255,0.5)",
-                    color: "#00f5ff",
-                    boxShadow: "0 0 20px rgba(0,245,255,0.3)",
-                    fontFamily: "'Orbitron', sans-serif",
+                    background: "linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 50%, transparent 100%)",
                   }}
-                >
-                  VV
+                />
+                {/* Name + hint */}
+                <div className="relative z-10 text-center pb-5 px-4">
+                  <h3 className="text-lg font-bold text-white mb-0.5">Veerendra Vishwakarma</h3>
+                  <p className="text-xs" style={{ color: "#00f5ff" }}>The Codex</p>
+                  <p className="text-xs mt-2 opacity-50 text-white">Hover to flip →</p>
                 </div>
-                <div className="text-center">
-                  <h3 className="text-xl font-bold text-white mb-1">Veerendra Vishwakarma</h3>
-                  <p className="text-sm" style={{ color: "#00f5ff" }}>The Codex</p>
-                </div>
-                <p className="text-xs mt-2" style={{ color: "rgba(255,255,255,0.4)" }}>
-                  Hover to reveal more →
-                </p>
               </div>
 
-              {/* Back */}
+              {/* Back — attitude photo with bio */}
               <div
-                className="flip-card-back absolute inset-0 rounded-2xl flex flex-col items-center justify-center gap-4 p-8 text-center"
+                className="flip-card-back absolute inset-0 rounded-2xl overflow-hidden flex flex-col items-center justify-end"
                 style={{
-                  background: "linear-gradient(135deg, rgba(168,85,247,0.12), rgba(0,245,255,0.08))",
                   border: "1px solid rgba(168,85,247,0.4)",
                   boxShadow: "0 0 30px rgba(168,85,247,0.15)",
                 }}
               >
-                <div className="text-3xl mb-2">👨‍💻</div>
-                <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
-                  I'm a <span style={{ color: "#00f5ff" }}>3rd Year B.Tech Student</span> passionate about
-                  building the future with AI and Cybersecurity. Currently mastering{" "}
-                  <span style={{ color: "#a855f7" }}>Spring Boot</span> and exploring the intersection of
-                  intelligence and security. Every line of code is a step toward innovation.
-                </p>
+                {/* Attitude photo */}
+                <img
+                  src={veerAttitude}
+                  alt="Veerendra Vishwakarma"
+                  className="absolute inset-0 w-full h-full object-cover object-top"
+                />
+                {/* Gradient overlay */}
                 <div
-                  className="px-4 py-1.5 rounded-full text-xs tracking-wider"
+                  className="absolute inset-0"
                   style={{
-                    background: "rgba(0,245,255,0.1)",
-                    border: "1px solid rgba(0,245,255,0.3)",
-                    color: "#00f5ff",
+                    background: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 50%, transparent 100%)",
                   }}
-                >
-                  B.Tech Computer Science
+                />
+                {/* Neon overlay tint */}
+                <div
+                  className="absolute inset-0 opacity-20"
+                  style={{
+                    background: "linear-gradient(135deg, rgba(168,85,247,0.3), rgba(0,245,255,0.1))",
+                  }}
+                />
+                {/* Bio text */}
+                <div className="relative z-10 pb-5 px-5 text-center">
+                  <p className="text-sm leading-6" style={{ color: "rgba(255,255,255,0.9)" }}>
+                    <span style={{ color: "#00f5ff" }}>3rd Year B.Tech Student</span> passionate about
+                    AI + Cybersecurity. Currently learning{" "}
+                    <span style={{ color: "#a855f7" }}>Spring Boot</span>. Building the future one
+                    line of code at a time.
+                  </p>
+                  <div
+                    className="inline-block mt-2 px-3 py-1 rounded-full text-xs"
+                    style={{
+                      background: "rgba(168,85,247,0.2)",
+                      border: "1px solid rgba(168,85,247,0.4)",
+                      color: "#a855f7",
+                    }}
+                  >
+                    B.Tech · Computer Science
+                  </div>
                 </div>
               </div>
             </div>
           </motion.div>
 
-          {/* Info */}
+          {/* Info side */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -124,8 +145,8 @@ export default function AboutSection() {
               </h3>
               <p className="text-sm leading-7" style={{ color: "rgba(255,255,255,0.6)" }}>
                 A passionate developer at the crossroads of Artificial Intelligence and Cybersecurity.
-                I build secure, intelligent systems that solve real-world problems. With a hacker mindset
-                and a builder's heart, I turn complex ideas into elegant solutions.
+                I build secure, intelligent systems that solve real-world problems. With a hacker
+                mindset and a builder's heart, I turn complex ideas into elegant solutions.
               </p>
             </div>
 
